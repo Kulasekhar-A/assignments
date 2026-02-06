@@ -12,4 +12,4 @@ if [ ! -d "$DIR" ]; then
   exit 1
 fi
 
-find "$DIR" -type f -name "*.conf" -exec sed -i 's/FOO/BAR/g' {} +
+find "$DIR" -type f -name "*.conf" -readable -writable \ -exec sed -i 's/FOO/BAR/g' {} +
