@@ -1,5 +1,8 @@
 #!/bin/bash
 
+echo "Enter number of terms:"
+read N
+
 A=0
 B=1
 COUNT=1
