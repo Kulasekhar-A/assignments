@@ -21,5 +21,5 @@ elif [ -f "$FILE" ]; then
     fi
 
 else
-    echo "Given path: $FILE does not exist"
+    echo "Given path: $FILE does not exist
 fi
