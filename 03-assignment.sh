@@ -14,8 +14,6 @@ fi
 
 echo "Replacing FOO → BAR in writable .conf files only..."
 
-find "$DIR" -type f -name "*.conf" -exec sed -i 's/FOO/BAR/g' {} +
-
-#find "$DIR" -type f -name "*.conf" -writable -exec perl -pi -e 's/FOO/BAR/g' {} +
+find "$DIR" -type f -name "*.conf" -writable -exec perl -pi -e 's/FOO/BAR/g' {} +
 
 echo "Replacement completed (protected files skipped safely)"
