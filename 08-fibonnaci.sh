@@ -1,12 +1,9 @@
 #!/bin/bash
 
-echo "Enter number of terms:"
-read N
-
 A=0
 B=1
 
-for i in {1..N}
+for i in {1..8}
 do
     echo $A
     C=$((A + B))
