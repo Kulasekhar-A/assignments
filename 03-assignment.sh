@@ -15,6 +15,6 @@ if [ ! -d "$DIR" ]; then
 fi
 
 # Replace FOO with BAR in all .conf files
-find "$DIR" -type f -name "*.conf" -exec sed -i 's/FOO/BAR/g' {} +
+find "$DIR" -type f -name "*.conf" -exec perl -pi -e 's/FOO/BAR/g' {} +
 
 echo "Replacement completed: FOO → BAR in all .conf files"
