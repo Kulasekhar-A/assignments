@@ -45,4 +45,4 @@ CHARS=$(wc -c < "$FILE")
 echo "File statistics for: $FILE"
 echo "Lines      : $LINES"
 echo "Words      : $WORDS"
-echo "Characters : $CHARS"
+echo "Characters : $CHARS
