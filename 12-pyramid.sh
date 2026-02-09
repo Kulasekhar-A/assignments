@@ -5,17 +5,16 @@ i=1
 
 while [ $i -le $ROWS ]
 do
-    SPACE=$((ROWS - I))
-    STAR=$((2 * i - 1))
-
-    # Print spaces
+    # print spaces
+    SPACE=$((ROWS - i))
     while [ $SPACE -gt 0 ]
     do
         echo -n " "
         SPACE=$((SPACE - 1))
     done
 
-    # Print stars
+    # print stars
+    STAR=$((2 * i - 1))
     COUNT=1
     while [ $COUNT -le $STAR ]
     do
